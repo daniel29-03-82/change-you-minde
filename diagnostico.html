@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico - Plataforma de Saúde Mental</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diagnostico.html">Diagnóstico</a></li>
+                <li><a href="apoio.html">Apoio</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="jogos.html">Jogos e Músicas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="diagnostic-test">
+            <h1>Teste de Saúde Mental</h1>
+            <p>Responda as perguntas para obter uma análise do seu estado emocional.</p>
+
+            <form id="mental-test">
+                <label for="question1">Você se sente triste com frequência?</label><br>
+                <input type="radio" id="q1_1" name="q1" value="Sim"> Sim
+                <input type="radio" id="q1_2" name="q1" value="Não"> Não<br><br>
+
+                <label for="question2">Você sente dificuldades para dormir?</label><br>
+                <input type="radio" id="q2_1" name="q2" value="Sim"> Sim
+                <input type="radio" id="q2_2" name="q2" value="Não"> Não<br><br>
+
+                <!-- Mais perguntas aqui -->
+                
+                <button type="submit">Submeter</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Saúde Mental - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/test.js"></script>
+</body>
+</html>
