@@ -1,0 +1,67 @@
+/* style.css */
+
+/* Reset CSS (Normalize.css) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Cores */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #f0f0f0;
+  --text-color: #333;
+}
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Contêiner principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+/* Seção de recursos */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  flex: 1 1 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    flex: 1 1 100%;
+  }
+}
